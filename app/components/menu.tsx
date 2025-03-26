@@ -1,6 +1,5 @@
 "use client";
 import Link from "next/link";
-import React from "react";
 
 export default function Menu() {
   return (
@@ -36,6 +35,14 @@ export default function Menu() {
             className="text-gray-800 hover:text-blue-600 font-medium transition"
           >
             Energy Drinks
+          </Link>
+        </li>
+        <li>
+          <Link
+            href="/wiese"
+            className="text-gray-800 hover:text-blue-600 font-medium transition"
+          >
+            Wiese
           </Link>
         </li>
       </ul>

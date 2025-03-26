@@ -1,11 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
-<<<<<<< HEAD
-import Link from "next/link";
-=======
 import Menu from "./components/menu";
->>>>>>> f72e5c9f9ec6d8a84640fe726dace5f1e8c5f309
+import "./globals.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,35 +25,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-<<<<<<< HEAD
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        <nav className="bg-gray-800 p-4">
-          <div className="container mx-auto flex justify-between items-center">
-            <div className="flex space-x-4">
-              <Link href="/" className="text-white hover:text-gray-300">
-                Home
-              </Link>
-              <Link href="/cars" className="text-white hover:text-gray-300">
-                Cars
-              </Link>
-              <Link href="/trucks" className="text-white hover:text-gray-300">
-                Trucks
-              </Link>
-              <Link href="/lego" className="text-white hover:text-gray-300">
-                Lego
-              </Link>
-              <Link href="/wiese" className="text-white hover:text-gray-300">
-                Wiese
-              </Link>
-            </div>
-          </div>
-        </nav>
-=======
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <Menu />
->>>>>>> f72e5c9f9ec6d8a84640fe726dace5f1e8c5f309
         {children}
       </body>
     </html>

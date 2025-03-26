@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 type Drink = {
     id: number;
@@ -25,25 +25,25 @@ const EnergyDrinkApp = () => {
                 id: 2,
                 name: "Red Bull",
                 price: "2.49",
-                image: "/images/redbull.jpg",
+                image: "/images/RedBull.png",
             },
             {
                 id: 3,
                 name: "Rockstar",
                 price: "2.79",
-                image: "/images/rockstar.jpg",
+                image: "/images/rockstar.png",
             },
             {
                 id: 4,
                 name: "Effect",
                 price: "1.99",
-                image: "/images/effect.jpg",
+                image: "/images/effect.png",
             },
             {
                 id: 5,
                 name: "Relentless",
                 price: "2.39",
-                image: "/images/relentless.jpg",
+                image: "/images/relentless.png",
             },
         ];
 

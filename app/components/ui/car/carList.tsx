@@ -1,6 +1,5 @@
 "use client";
 import { Car } from "@/app/lib/types/types";
-import React from "react";
 
 type Props = {
   cars: Car[];

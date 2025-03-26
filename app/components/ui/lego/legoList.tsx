@@ -1,7 +1,7 @@
 "use client";
 import { LegoSet } from "@/app/lib/types/types";
 import Image from "next/image";
-import React, { useState } from "react";
+import { useState } from "react";
 
 type Props = {
   sets: LegoSet[];

@@ -1,6 +1,5 @@
 "use client";
 import { CartItem } from "@/app/lib/types/types";
-import React from "react";
 
 type Props = {
     items: CartItem[];
@@ -21,7 +20,7 @@ const Cart = ({ items }: Props) => {
                 <>
                     <div className="space-y-4">
                         {items.map((item) => (
-                            <div key={item.id} 
+                            <div key={item.id}
                                 className="flex justify-between items-center border-b-2 border-gray-100 pb-4"
                             >
                                 <div>

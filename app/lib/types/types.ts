@@ -6,7 +6,7 @@ export type Car = {
         serialNumber: number;
         hp: number;
     }
-} 
+}
 export type Truck = {
     name: string;
     type: string;

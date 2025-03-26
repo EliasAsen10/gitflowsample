@@ -19,7 +19,7 @@ const EnergyDrinkApp = () => {
                 id: 1,
                 name: "Monster Energy",
                 price: "2.99",
-                image: "/images/monster.jpg",
+                image: "/images/monster.png",
             },
             {
                 id: 2,

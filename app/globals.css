@@ -24,3 +24,96 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Wiese Styles */
+.wiese-container {
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.sky {
+  height: 60vh;
+  background: linear-gradient(to bottom, #64b5f6, #bbdefb);
+  position: relative;
+}
+
+.cloud {
+  position: absolute;
+  background: white;
+  border-radius: 50px;
+  animation: float linear infinite;
+}
+
+.cloud1 {
+  width: 100px;
+  height: 40px;
+  top: 20%;
+  left: 20%;
+  animation-duration: 20s;
+}
+
+.cloud2 {
+  width: 140px;
+  height: 50px;
+  top: 40%;
+  left: 60%;
+  animation-duration: 25s;
+}
+
+.meadow {
+  height: 40vh;
+  background: #81c784;
+  position: relative;
+}
+
+.grass-container {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+}
+
+.grass-blade {
+  position: absolute;
+  bottom: 0;
+  width: 4px;
+  height: 60px;
+  background: #2e7d32;
+  transform-origin: bottom center;
+  animation: sway 3s ease-in-out infinite;
+}
+
+.grass-blade:nth-child(odd) {
+  animation-delay: 0.5s;
+}
+
+.flowers {
+  position: absolute;
+  bottom: 50px;
+  width: 100%;
+}
+
+.flower {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #e91e63;
+  border-radius: 50%;
+  bottom: 0;
+}
+
+.flower:nth-child(2n) { background: #ff9800; left: 25%; }
+.flower:nth-child(3n) { background: #9c27b0; left: 45%; }
+.flower:nth-child(4n) { background: #f44336; left: 65%; }
+.flower:nth-child(5n) { background: #ffeb3b; left: 85%; }
+
+@keyframes sway {
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(5deg); }
+}
+
+@keyframes float {
+  from { transform: translateX(-150px); }
+  to { transform: translateX(100vw); }
+}

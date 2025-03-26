@@ -1,38 +1,51 @@
 "use client";
 import Link from "next/link";
-import React from "react";
 
 export default function Menu() {
   return (
-    <div className="bg-white">
-      <ul className="flex p-4 justify-between items-center">
-        <div className="flex gap-4">
-          <li>
-            <Link
-              className="p-2 hover:bg-gray-100 rounded-2xl text-gray-900"
-              href="/"
-            >
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link
-              className="p-2 hover:bg-gray-100 rounded-2xl text-gray-900"
-              href="/cars"
-            >
-              Cars
-            </Link>
-          </li>
-          <li>
-            <Link
-              className="p-2 hover:bg-gray-100 rounded-2xl text-gray-900"
-              href="/lego"
-            >
-              Buy a Commiter
-            </Link>
-          </li>
-        </div>
+    <nav className="bg-white shadow-md sticky top-0 z-50">
+      <ul className="flex gap-6 px-6 py-4 items-center">
+        <li>
+          <Link
+            href="/"
+            className="text-gray-800 hover:text-blue-600 font-medium transition"
+          >
+            Home
+          </Link>
+        </li>
+        <li>
+          <Link
+            href="/cars"
+            className="text-gray-800 hover:text-blue-600 font-medium transition"
+          >
+            Cars
+          </Link>
+        </li>
+        <li>
+          <Link
+            href="/lego"
+            className="text-gray-800 hover:text-blue-600 font-medium transition"
+          >
+            Buy a Committer
+          </Link>
+        </li>
+        <li>
+          <Link
+            href="/EnergyDrinks"
+            className="text-gray-800 hover:text-blue-600 font-medium transition"
+          >
+            Energy Drinks
+          </Link>
+        </li>
+        <li>
+          <Link
+            href="/wiese"
+            className="text-gray-800 hover:text-blue-600 font-medium transition"
+          >
+            Wiese
+          </Link>
+        </li>
       </ul>
-    </div>
+    </nav>
   );
 }
